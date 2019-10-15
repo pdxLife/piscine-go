@@ -1,1 +1,1 @@
-find -name '*.sh' | cut -d "." -f2 | cut -d "/" -f2 | cat -e
+find ./ -name '*.sh' | rev | cut -d "." -f2 | cut -d "/" -f1 | rev
