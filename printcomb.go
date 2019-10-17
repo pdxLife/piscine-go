@@ -14,8 +14,8 @@ func PrintComb() {
 					z01.PrintRune(c)
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
-				}	
-			}				
-		} 		
-	} 	
+				}
+			}
+		}
+	}
 }
