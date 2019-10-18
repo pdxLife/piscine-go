@@ -7,7 +7,7 @@ func StrRev(s string) string {
 		i++
 	}
 	for j := range s {
-		k = string(s[i]) + k
+		k = string(s[j]) + k
 	}
 	return k
 }
