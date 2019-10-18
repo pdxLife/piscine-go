@@ -1,10 +1,15 @@
 package piscine
 
 func StrRev(s string) string {
-
-	var reverse string
-	for i := len(s) - 1; i >= 0; i-- {
-		reverse += string(s[i])
+	var k string
+	i = 0
+	for range s {
+		i++
 	}
-	return reverse
+	for j := range s {
+		k = string(s[i]) + k
+	}
+	return k
 }
+
+//func reverse
