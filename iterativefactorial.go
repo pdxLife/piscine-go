@@ -2,12 +2,17 @@ package piscine
 
 var arg int
 
-func IterativeFactorial(arg int) int {
+func IterativeFactorial(nb int) int {
 
-	result := 1
+	if nb > 0 && nb < 25 {
 
-	for i := 1; i <= arg; i++ {
-		result = result * i
+		result := 1
+
+		for i := 1; i <= nb; i++ {
+			result = result * i
+		}
+		return result
+	} else {
+		return 0
 	}
-	return result
 }
