@@ -1,19 +1,37 @@
 package piscine
 
-var arg int
+//var arg int
 
-func RecursiveFactorial(arg int) int {
+func RecursiveFactorial(nb int) int {
 
-	if arg == 1 {
-		return 1
-	} else if arg > 1 {
-		return arg * RecursiveFactorial(arg-1)
-	} else {
-		// result := 1
+	if nb >= 0 && nb < 20 {
 
-		// for i := 1; i <= arg; i++ {
-		// 	result = result * i
-		// }
-		return 0
+		if nb == 1 {
+			return 1
+		} else if nb > 1 {
+			return nb * RecursiveFactorial(nb-1)
+		} else {
+			return 1
+		}
 	}
+	return 0
 }
+
+// package piscine
+
+// var arg int
+
+// func IterativeFactorial(nb int) int {
+
+// 	if nb >= 0 && nb < 25 {
+
+// 		result := 1
+
+// 		for i := 1; i <= nb; i++ {
+// 			result = result * i
+// 		}
+// 		return result
+// 	} else {
+// 		return 0
+// 	}
+// }
