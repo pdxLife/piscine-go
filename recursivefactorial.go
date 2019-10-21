@@ -1,6 +1,6 @@
 package piscine
 
-var arg int
+// var arg int
 
 func RecursiveFactorial(nb int) int {
 
