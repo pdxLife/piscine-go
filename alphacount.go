@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func AlphaCount(str string) int {
 
 	counter := 0
@@ -16,7 +14,7 @@ func AlphaCount(str string) int {
 			//fmt.Printf("index is %v     letter is &w \n", index, letter)
 		}
 	}
-	fmt.Printf("Counter value is %v \n", counter)
+	//fmt.Printf("Counter value is %v \n", counter)
 	//fmt.Println()
 	return counter
 }
