@@ -1,4 +1,4 @@
-package student
+package piscine
 
 func IsPrintable(str string) bool {
 	runes := []rune(str)
