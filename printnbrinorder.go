@@ -44,7 +44,6 @@ func PrintNbrInOrder(n int) {
 		}
 	}
 }
-}
 
 // counter := 0
 
