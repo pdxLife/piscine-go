@@ -1,28 +1,12 @@
-// package piscine
-
-// func FindNextPrime(nb int) int {
-
-// 	result := nb
-// 	// if nb < 2 {
-// 	// 	return
-// 	// }
-// 	for i := 2; i*i <= nb; i++ {
-
-// 		if nb%i == 0 {
-// 			return nb
-// 		}
-// 	}
-// 	return result
-// }
-
 package piscine
 
-func check(a int) bool {
-	if a <= 1 {
+func IsPrime(nb int) bool {
+
+	if nb < 2 {
 		return false
 	}
-	for i := 2; i*i <= a; i++ {
-		if a%i == 0 {
+	for i := 2; i*i <= nb; i++ {
+		if nb%i == 0 {
 			return false
 		}
 	}
@@ -30,10 +14,33 @@ func check(a int) bool {
 }
 
 func FindNextPrime(nb int) int {
-	for {
-		if check(nb) {
-			return nb
+
+	for i := nb; i++{
+		if IsPrime(i) == true {
+			return i
 		}
-		nb++
 	}
 }
+
+// package piscine
+
+// func check(a int) bool {
+// 	if a <= 1 {
+// 		return false
+// 	}
+// 	for i := 2; i*i <= a; i++ {
+// 		if a%i == 0 {
+// 			return false
+// 		}
+// 	}
+// 	return true
+// }
+
+// func FindNextPrime(nb int) int {
+// 	for {
+// 		if check(nb) {
+// 			return nb
+// 		}
+// 		nb++
+// 	}
+// }
